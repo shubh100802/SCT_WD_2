@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="task2/css/style.css">
+</head>
+
+<body>
+    <!-- Background Div -->
+    <div class="page-bg">
+        <img src="task2/Images/BG.webp" alt="Background" class="background-image">
+    </div>
+
+    <!-- Stopwatch Container -->
+    <div class="stopwatch-container">
+        <h1>Stopwatch</h1>
+        <div class="time-display">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span
+                id="milliseconds">000</span>
+        </div>
+        <div class="buttons">
+            <button id="start"><i class="fas fa-play"></i> Start</button>
+            <button id="pause"><i class="fas fa-pause"></i> Pause</button>
+            <button id="reset"><i class="fas fa-stop"></i> Reset</button>
+            <button id="lap"><i class="fas fa-flag-checkered"></i> Lap</button>
+        </div>
+    </div>
+
+    <!-- Lap Times Table -->
+    <div class="lap-times-container">
+        <h2>Lap Times</h2>
+        <table id="lap-times">
+            <thead>
+                <tr>
+                    <th>Lap</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Lap times will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="task2/js/script.js"></script>
+</body>
+
+</html>
